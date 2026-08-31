@@ -15,6 +15,14 @@ dist-ssr
 .env.*
 !.env.example
 
+# One-off data migration artifacts (contain member PII)
+/old_database
+/supabase/seed_from_old_db.sql
+
+# Supabase CLI local state
+/supabase/.temp
+/supabase/.branches
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
